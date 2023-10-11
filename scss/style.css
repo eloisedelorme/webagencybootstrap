@@ -1,1 +1,20 @@
 /*# sourceMappingURL=style.css.map */
+
+/*Padding zone de texte */
+
+.accueil_blocTexte--center {
+    top: 200px;
+    height : 500px ;
+    left : 100px;
+}
+
+.point {
+    position : relative ;
+    width: 15px;
+    height: 15px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #5cadd3;
+    box-sizing: border-box;
+    top : 7px;
+}
