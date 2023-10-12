@@ -71,3 +71,15 @@
     background-color: #5cadd3;
 }
 
+.btn-folio > a {
+    background-color: #ccc ;
+    color :#646464 ;
+}
+
+.btn-folio > a:active {
+    background-color: #4494bb ;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 14.4px;
+    color :#FFF ;
+    font-weight: 700 ;
+}
