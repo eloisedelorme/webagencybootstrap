@@ -17,3 +17,54 @@
     box-sizing: border-box;
     top : 7px;
 }
+
+/*Rotation de l'icone à 360° dans le sens inverse de celle du rond pour donner
+ l'impression qu'elle est statique : icone enfant de .rond */
+
+ .rond > i {
+    animation: rotation2 6s infinite linear;
+}
+
+@keyframes rotation2 {
+    from {
+        transform: rotate(359deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+/* Rond contenant l'icone et le point. Rotation à 360° et @keyframes poue l'animation*/
+.rond {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin-top: 40px;
+    margin-right: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 50%;
+    animation : rotation 6s infinite linear ;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+    /* Point situé dans le rond */
+.point2 {
+    position: absolute;
+    left: 58px;
+    width: 10px;
+    height: 10px;
+    margin: auto 0;
+    border-radius: 50%;
+    background-color: #5cadd3;
+}
