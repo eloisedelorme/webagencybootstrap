@@ -83,3 +83,44 @@
     color :#FFF ;
     font-weight: 700 ;
 }
+
+/* Overlay */
+.overlay-image .hover {
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0,0,0,.3) ;
+    color : #FFF ;
+    height: 60px;
+    z-index: 3;
+    }
+
+figcaption > a {
+    outline: none;
+    text-decoration: none;
+    color : #FFF ;
+}
+   /* Apparition overlay sur passage souris */
+.overlay-image:hover .hover {
+    opacity: 1;
+}
+
+.rond2 {
+    z-index: 4;
+    width: 30px;
+    height: 30px;
+    background-color: #4494bb ;
+    border-radius: 50%;
+    border : 2px solid #FFF;
+    top : -35% ;
+    left : 85%;
+
+}
+
+.rond2 > i {
+    color: #FFF;
+    font-weight: bold;
+}
+
+.figure-folio {
+    height : 300px;
+}
